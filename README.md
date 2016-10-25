@@ -5,6 +5,7 @@
 
 # 使用说明
 使用前运行 `npm install` 安装依赖
+
 以下三项可以通过`index.js`中的三个变量修改
 
 - 修改secret为github中设置的值
