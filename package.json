@@ -1,0 +1,16 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "description": "Webhook process handler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "github-webhook-handler": "^0.6.0",
+    "log4js": "^0.6.38"
+  },
+  "devDependencies": {}
+}
