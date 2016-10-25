@@ -23,8 +23,7 @@ log4js.configure({
             type: 'file',
             filename: logDirectory,
             maxLogSize: 104800,
-            backups: 100,
-            category: 'normal'
+            backups: 100
         }
     ],
     "replaceConsole": true
@@ -38,8 +37,8 @@ http.createServer(function (req, res) {
         res.end('no such location');
         logger.warn('Someone trying to access an unexisit page');
     });
-    logger.info('Webhook listener started on port 7777');
 }).listen(listenPort, '0.0.0.0');
+logger.info('Webhook listener started on port 7777');
 
 handler.on('error', function (err) {
     logger.info(err.message);
